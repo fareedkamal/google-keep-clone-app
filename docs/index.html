@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <div class="header set">
+        <div class="header-sec set btn-sec">
+            <button class="btn"><img src="./images/menu_FILL0_wght400_GRAD0_opsz48.svg"></button>
+            <div class="keep-logo set">
+                <img class="keep-logo-img" src="./images/google-keep.png" alt="keep">
+                <p>Keep</p>
+            </div>
+        </div>
+        <div class="header-sec set search-sec">
+            <button class="btn"><img src="./images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search"></button>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="header-sec set btn-sec">
+            <button id="view-btn" title="change view"  class="btn"><img src="./images/view_list_FILL0_wght400_GRAD0_opsz48.svg"></button>
+        </div>
+    </div>
+    
+    
+    <!-- CONTENT -->
+    <div  id="content" class="set col">
+        <div id="note-taker-box" class="set">
+            <div id="note-textfield" class="set note-taker-sec">
+                <input class="hide" id="note-title" type="text" placeholder="Title">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." ></div>
+                <div id="list-box" class="hide">  
+                    <div id="add-sign" class="list-text" contenteditable="true" placeholder="List item" ></div>
+                </div>
+                <button id="list-btn" class="btn"></button>   
+            
+            </div>
+            <div id="note-btnfield" class="hide note-taker-sec" >
+                <button id="save-btn" class="bttn note-taker-btns">Save</button>
+                <button id="note-taker-close-btn" class="bttn note-taker-btns">Close</button>       
+            </div>
+        </div>
+        <div id="notes-container" class="set">
+            <div id="" class="note-item" data-id="1">
+                <input class="" id="note-title" type="text" placeholder="Title" value="REACT ROADMAP">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">read docs</div><button class="done-box"></button></div><div class="list-item set crossed"><button class="done-box check"></button><div class="list-data" contenteditable="true" placeholder="">find best course official/non official</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">find best youtube channel</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+            <div id="" class="note-item" data-id="2">
+                <input class="" id="note-title" type="text" placeholder="Title" value="Daily Schedule 🙌">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8 am: wake</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8:30 am:&nbsp; &nbsp; breakfast</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">9 to 12 pm:&nbsp; WORK!!!!</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30pm:&nbsp; &nbsp; lunch and rest</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30 to 1pm : NAP TIME</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+            <div id="" class="note-item" data-id="1">
+                <input class="" id="note-title" type="text" placeholder="Title" value="REACT ROADMAP">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">read docs</div><button class="done-box"></button></div><div class="list-item set crossed"><button class="done-box check"></button><div class="list-data" contenteditable="true" placeholder="">find best course official/non official</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">find best youtube channel</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+
+            <div id="" class="note-item" data-id="2">
+                <input class="" id="note-title" type="text" placeholder="Title" value="Daily Schedule 🙌">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8 am: wake</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8:30 am:&nbsp; &nbsp; breakfast</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">9 to 12 pm:&nbsp; WORK!!!!</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30pm:&nbsp; &nbsp; lunch and rest</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30 to 1pm : NAP TIME</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+
+
+            <div id="" class="note-item" data-id="2">
+                <input class="" id="note-title" type="text" placeholder="Title" value="Daily Schedule 🙌">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8 am: wake</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8:30 am:&nbsp; &nbsp; breakfast</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">9 to 12 pm:&nbsp; WORK!!!!</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30pm:&nbsp; &nbsp; lunch and rest</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30 to 1pm : NAP TIME</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+            <div id="" class="note-item" data-id="1">
+                <input class="" id="note-title" type="text" placeholder="Title" value="REACT ROADMAP">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">read docs</div><button class="done-box"></button></div><div class="list-item set crossed"><button class="done-box check"></button><div class="list-data" contenteditable="true" placeholder="">find best course official/non official</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">find best youtube channel</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+            <div id="" class="note-item" data-id="2">
+                <input class="" id="note-title" type="text" placeholder="Title" value="Daily Schedule 🙌">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8 am: wake</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8:30 am:&nbsp; &nbsp; breakfast</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">9 to 12 pm:&nbsp; WORK!!!!</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30pm:&nbsp; &nbsp; lunch and rest</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30 to 1pm : NAP TIME</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+            <div id="" class="note-item" data-id="1">
+                <input class="" id="note-title" type="text" placeholder="Title" value="REACT ROADMAP">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">read docs</div><button class="done-box"></button></div><div class="list-item set crossed"><button class="done-box check"></button><div class="list-data" contenteditable="true" placeholder="">find best course official/non official</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">find best youtube channel</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+
+            <div id="" class="note-item" data-id="2">
+                <input class="" id="note-title" type="text" placeholder="Title" value="Daily Schedule 🙌">
+                <div id="note-input-area" contenteditable="true" placeholder="Take a note..." class="hide"></div>
+                <div id="list-box" class=""><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8 am: wake</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">8:30 am:&nbsp; &nbsp; breakfast</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">9 to 12 pm:&nbsp; WORK!!!!</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30pm:&nbsp; &nbsp; lunch and rest</div><button class="done-box"></button></div><div class="list-item set"><button class="done-box uncheck"></button><div class="list-data" contenteditable="true" placeholder="">12.30 to 1pm : NAP TIME</div><button class="done-box"></button></div><div id="add-sign" class="list-text" contenteditable="true" placeholder="List item"></div></div>
+                <button class="note-del-btn hide"></button>   
+            
+            </div>
+
+
+
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Copyright © 2022 fareedkamal</p>
+        <a href="https://github.com/fareedkamal">
+            <div title="github.com/fareedkamal" class="git"></div>
+        </a>
+    </footer>
+    <!-- OVERLAY  -->
+    <div id="overlay" class="hide">
+        <!-- NOTE EDITOR BOX -->
+    </div>
+    
+</body>
+</html>
